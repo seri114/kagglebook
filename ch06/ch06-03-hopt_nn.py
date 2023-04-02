@@ -31,9 +31,11 @@ tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
 # -----------------------------------
 from hyperopt import hp
 from keras.callbacks import EarlyStopping
-from keras.layers.advanced_activations import ReLU, PReLU
+# from keras.layers.advanced_activations import ReLU, PReLU
+from keras.layers import ReLU, PReLU
 from keras.layers.core import Dense, Dropout
-from keras.layers.normalization import BatchNormalization
+# from keras.layers.normalization import BatchNormalization
+from keras.layers import BatchNormalization
 from keras.models import Sequential
 from keras.optimizers import SGD, Adam
 from sklearn.preprocessing import StandardScaler
